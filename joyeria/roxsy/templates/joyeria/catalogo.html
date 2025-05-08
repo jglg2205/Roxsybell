@@ -1,0 +1,19 @@
+{% load static %}
+
+<div id="catalogo" class="container rounded bg-light mt-2 mb-2 p-2">
+    <h2 class="text-center text-danger display-4"><strong><i>Catálogo de Productos</i></strong></h2>
+    <div class="row m-5">
+      {% for producto in productos %}
+      <div class="col-md-4 col-sm-12">
+        <h3>{{producto.nombre}}</h3>
+        <h6 class="text-primary">{{producto.categoria}}</h6>
+        <div class="card" style="width: 18rem;">
+            <img src="{{producto.imagen.url}}" class="card-img-top" alt="{{producto.nombre}}" height="280px">
+            <div class="card-body bg-secondary">
+              <p class="card-text text-white">{{producto.descripcion}}</p>
+            </div>
+          </div>
+      </div> 
+      {% endfor %}
+    </div>
+  </div>

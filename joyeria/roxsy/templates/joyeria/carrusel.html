@@ -1,0 +1,26 @@
+{% load static %}
+
+<div id="carouselExample" class=" m-3 text-center carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'assets/modelo_carrusel.jpg'%}" class="d-block w-70 rounded" alt="modelo carrusel">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets/aretes_varios.jpeg'%}" class="d-block w-100 rounded" alt="aretes variados" height="650px">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets/coleccion_aretes.jpeg'%}" class="d-block w-100 rounded" alt="coleccion aretes" height="650px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  

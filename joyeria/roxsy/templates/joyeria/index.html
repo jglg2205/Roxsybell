@@ -1,0 +1,50 @@
+{% extends "joyeria/layout.html" %}
+{% load static %}
+
+{%block body%}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-2">
+                <h1 class="text-center text-light display-1"><strong>¡Belleza y elegancia en un solo sitio!</strong></h1>
+                <h2 class="text-center text-dark m-3"><strong><i>Los mejores accesorios al mejor precio, ven y recorre nuestro catálogo</i></strong></h2>
+            </div>
+           
+          
+        </div>
+        <div class="row rounded m-2" style="background-color: darkgrey;">
+            <div class="col-sm-12 col-md-3">
+                <br>
+                <br>
+                <h2 class="text-center m-5 p-2 text-light" style="text-align: center; justify-content: center; font-weight: bold;"><strong>¡No hay limites! Un sin fin de opciones que te permitiran lucir como desees y proyectar lo mejor de ti</strong></h2>
+                
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <section>
+                    {% include 'joyeria/carrusel.html'%}
+                </section>
+               
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="m-5 p-2 text-light" style="text-align: center; justify-content: center; font-weight: bold;"><strong>Porque te mereces lo mejor, lo traemos para ti</strong></h2>
+
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    {% include 'joyeria/catalogo.html' %}
+                </section>
+                
+            </div>
+            {% include 'joyeria/footer.html' %} 
+        </div>
+     
+    </div>
+    
+    
+
+{% endblock%}

@@ -1,0 +1,20 @@
+
+
+
+.footer{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.enlace-footer{
+    text-decoration: none;
+    justify-content: space-between;
+    
+}
+
+.fondo{
+    background-color: rgba(186, 79, 101, 0.989);
+}
