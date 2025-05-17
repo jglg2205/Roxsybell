@@ -3,5 +3,5 @@ set -o errexit
 
 pip install -r joyeria/requirements.txt
 
-python manage.py collectstatic --no-input
-python manage.py migrate
+python joyeria/manage.py collectstatic --no-input
+python joyeria/manage.py migrate
