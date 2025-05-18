@@ -30,9 +30,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 
-RENDER_EXTERNAl_HOSTNAME = config('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAl_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAl_HOSTNAME)
+
 
 
 # Application definition
