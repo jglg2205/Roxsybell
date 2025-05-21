@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'joyeria/joyeria.wsgi.application'
+WSGI_APPLICATION = 'joyeria.joyeria.wsgi.application'
 
 
 # Database
