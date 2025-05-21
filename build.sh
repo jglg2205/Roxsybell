@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
 
-pip install -r requirements.txt
+pip install -r joyeria/requirements.txt
 
-python manage.py collectstatic --no-input
-python pmanage.py migrate
+python joyeria/manage.py collectstatic --no-input
+python joyeria/manage.py migrate
