@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['https://roxsybell.onrender.com']
+ALLOWED_HOSTS = []
 
 
 
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'joyeria.joyeria.wsgi.application'
+WSGI_APPLICATION = 'joyeria.wsgi.application'
 
 
 # Database
